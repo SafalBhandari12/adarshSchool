@@ -3,20 +3,15 @@ import AboutSection from "../components/AboutSection";
 import ProductsSection from "../components/ProductsSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-import ParallaxBackground from "../components/ParallaxBackground";
 
 export default function Home() {
   return (
-    <>
-      <ParallaxBackground />
-
-      <div className='relative z-10'>
-        <HeroSection />
-        <AboutSection />
-        <ProductsSection />
-        <ContactSection />
-        <Footer />
-      </div>
-    </>
+    <div className='min-h-screen'>
+      <HeroSection />
+      <AboutSection />
+      <ProductsSection />
+      <ContactSection />
+      <Footer />
+    </div>
   );
 }

@@ -3,24 +3,63 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Warm Earthy Color Palette */
+  --dusty-rose: #d6a99d;
+  --cream-yellow: #fbf3d5;
+  --sage-green: #d6dac8;
+  --teal-gray: #9cafaa;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom utility classes for the warm earthy palette */
+.bg-dusty-rose {
+  background-color: #d6a99d;
+}
+.bg-cream-yellow {
+  background-color: #fbf3d5;
+}
+.bg-sage-green {
+  background-color: #d6dac8;
+}
+.bg-teal-gray {
+  background-color: #9cafaa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-dusty-rose {
+  color: #d6a99d;
+}
+.text-cream-yellow {
+  color: #fbf3d5;
+}
+.text-sage-green {
+  color: #d6dac8;
+}
+.text-teal-gray {
+  color: #9cafaa;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.border-dusty-rose {
+  border-color: #d6a99d;
+}
+.border-cream-yellow {
+  border-color: #fbf3d5;
+}
+.border-sage-green {
+  border-color: #d6dac8;
+}
+.border-teal-gray {
+  border-color: #9cafaa;
+}
+
+.hover\:bg-dusty-rose:hover {
+  background-color: #d6a99d;
+}
+.hover\:bg-teal-gray:hover {
+  background-color: #9cafaa;
+}
+.hover\:text-dusty-rose:hover {
+  color: #d6a99d;
+}
+.hover\:text-teal-gray:hover {
+  color: #9cafaa;
 }
