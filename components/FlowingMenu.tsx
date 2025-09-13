@@ -16,7 +16,7 @@ interface FlowingMenuProps {
 const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
   React.useEffect(() => {
     // Add custom keyframes to the document
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.textContent = `
       @keyframes marquee {
         from { transform: translateX(0%); }
@@ -24,7 +24,7 @@ const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
       }
     `;
     document.head.appendChild(style);
-    
+
     return () => {
       document.head.removeChild(style);
     };
@@ -127,14 +127,14 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
         onMouseLeave={handleMouseLeave}
       >
         <span className='mr-4'>{text}</span>
-        <svg 
-          className='w-6 h-6 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300' 
-          fill='currentColor' 
+        <svg
+          className='w-6 h-6 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300'
+          fill='currentColor'
           viewBox='0 0 20 20'
         >
-          <path 
-            fillRule='evenodd' 
-            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' 
+          <path
+            fillRule='evenodd'
+            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
             clipRule='evenodd'
           />
         </svg>

@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import ProductsSection from "../components/ProductsSection";
+import DomeGallery from "../components/DomeGallery";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import ParallaxBackground from "../components/ParallaxBackground";
@@ -14,6 +15,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProductsSection />
+        <div style={{ width: "100vw", height: "100vh" }} className='bg-white'>
+          <DomeGallery />
+        </div>
         <ContactSection />
         <Footer />
       </div>
