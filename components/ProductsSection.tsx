@@ -3,23 +3,23 @@ import FlowingMenu from "./FlowingMenu";
 const demoItems = [
   {
     link: "#",
-    text: "Mojave",
-    image: "https://picsum.photos/600/400?random=1",
+    text: "Pre-Primary",
+    image: "/images/pre-primary.png",
   },
   {
     link: "#",
-    text: "Sonoma",
-    image: "https://picsum.photos/600/400?random=2",
+    text: "Primary School",
+    image: "/images/primary.png",
   },
   {
     link: "#",
-    text: "Monterey",
-    image: "https://picsum.photos/600/400?random=3",
+    text: "Middle School",
+    image: "/images/midle.png",
   },
   {
     link: "#",
-    text: "Sequoia",
-    image: "https://picsum.photos/600/400?random=4",
+    text: "Secondary School",
+    image: "/images/secondary.png",
   },
 ];
 

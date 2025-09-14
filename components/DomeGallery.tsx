@@ -35,31 +35,31 @@ type ItemDef = {
 
 const DEFAULT_IMAGES: ImageItem[] = [
   {
-    src: "https://images.unsplash.com/photo-1755331039789-7e5680e26e8f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/pre-primary.png",
     alt: "Abstract art",
   },
   {
-    src: "https://images.unsplash.com/photo-1755569309049-98410b94f66d?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://thumbs.dreamstime.com/b/cute-little-indian-indian-asian-school-boy-wearing-uniform-cute-little-indian-indian-asian-school-boy-wearing-uniform-150100376.jpg",
     alt: "Modern sculpture",
   },
   {
-    src: "https://images.unsplash.com/photo-1755497595318-7e5e3523854f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://5.imimg.com/data5/SELLER/Default/2023/7/325708795/OM/YM/IC/4449167/kids-school-uniforms.jpg",
     alt: "Digital artwork",
   },
   {
-    src: "https://images.unsplash.com/photo-1755353985163-c2a0fe5ac3d8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://media.istockphoto.com/id/1453309229/photo/happy-confident-indian-student-schoolgirl-wearing-school-uniform-standing-cross-arm-isolated.jpg?s=612x612&w=0&k=20&c=zThjuiOqr9-RQ2RZQrHbvEGWW0b2Vw3NCLN_Tn95t8Q=",
     alt: "Contemporary art",
   },
   {
-    src: "https://images.unsplash.com/photo-1745965976680-d00be7dc0377?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://amityschools.in/mohali/wp-content/uploads/2023/10/School-Uniform_1.jpeg",
     alt: "Geometric pattern",
   },
   {
-    src: "https://images.unsplash.com/photo-1752588975228-21f44630bb3c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://img.freepik.com/premium-photo/indian-child-school-uniform-white-background_54391-4689.jpg",
     alt: "Textured surface",
   },
   {
-    src: "https://pbs.twimg.com/media/Gyla7NnXMAAXSo_?format=jpg&name=large",
+    src: "https://media.istockphoto.com/id/1385038887/photo/excited-school-boy-running-and-jumping-on-street-after-school.jpg?s=612x612&w=0&k=20&c=AbqTQli-v9pj43ssCusBL-U-aqjdNwWZt5m8sLxhc-Q=",
     alt: "Social media image",
   },
 ];

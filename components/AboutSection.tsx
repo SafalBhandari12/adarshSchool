@@ -80,15 +80,15 @@ export default function AboutSection() {
 
         {/* Bottom Stats Section */}
         <div className='mt-24 grid grid-cols-1 md:grid-cols-3 gap-8'>
-          <div className='text-center p-8 bg-cream-yellow rounded-xl'>
+          <div className='text-center p-8  rounded-xl'>
             <div className='text-4xl font-bold text-dusty-rose mb-2'>12+</div>
             <div className='text-gray-700 font-medium'>Years Experience</div>
           </div>
-          <div className='text-center p-8 bg-cream-yellow rounded-xl'>
+          <div className='text-center p-8 rounded-xl'>
             <div className='text-4xl font-bold text-dusty-rose mb-2'>500+</div>
             <div className='text-gray-700 font-medium'>Schools Served</div>
           </div>
-          <div className='text-center p-8 bg-cream-yellow rounded-xl'>
+          <div className='text-center p-8 rounded-xl'>
             <div className='text-4xl font-bold text-dusty-rose mb-2'>50K+</div>
             <div className='text-gray-700 font-medium'>Happy Students</div>
           </div>
