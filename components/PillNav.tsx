@@ -260,7 +260,7 @@ const PillNav: React.FC<PillNavProps> = ({
   return (
     <div className='absolute top-[1em] z-50 w-full left-0 flex justify-center'>
       <nav
-        className={`w-max flex items-center justify-start box-border px-4 ${className}`}
+        className={`w-full md:w-max flex items-center justify-between md:justify-start box-border px-4 ${className}`}
         aria-label='Primary'
         style={cssVars}
       >
@@ -419,49 +419,59 @@ const PillNav: React.FC<PillNavProps> = ({
           onClick={toggleMobileMenu}
           aria-label='Toggle menu'
           aria-expanded={isMobileMenuOpen}
-          className='md:hidden border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative'
+          className='md:hidden border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-2 relative rounded-lg hover:bg-white/10 transition-colors'
           style={{
-            width: "var(--nav-h)",
-            height: "var(--nav-h)",
-            background: "var(--base, #000)",
+            width: "48px",
+            height: "48px",
+            background: "transparent",
           }}
         >
           <span
             className='hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]'
-            style={{ background: "var(--pill-bg, #fff)" }}
+            style={{ background: "#000" }}
           />
           <span
             className='hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]'
-            style={{ background: "var(--pill-bg, #fff)" }}
+            style={{ background: "#000" }}
           />
         </button>
       </nav>
 
       <div
         ref={mobileMenuRef}
-        className='md:hidden absolute top-[3em] left-1/2 transform -translate-x-1/2 w-80 max-w-[90vw] rounded-[27px] shadow-none z-[998] origin-top'
+        className='md:hidden fixed top-20 left-4 right-4 rounded-2xl shadow-2xl z-[998] origin-top backdrop-blur-sm border border-gray-200'
         style={{
-          ...cssVars,
-          background: "transparent",
+          background: "rgba(255, 255, 255, 0.95)",
+          maxWidth: "320px",
+          margin: "0 auto",
         }}
       >
-        <ul className='list-none m-0 p-[3px] flex flex-col gap-[3px]'>
+        <ul className='list-none m-0 p-4 flex flex-col gap-3'>
           {items.map((item) => {
             const defaultStyle: React.CSSProperties = {
-              background: "var(--pill-bg, #fff)",
-              color: "var(--pill-text, #fff)",
+              background: "rgba(255, 255, 255, 0.9)",
+              color: "#374151",
+              border: "1px solid #D6A99D",
             };
             const hoverIn = (e: React.MouseEvent<HTMLAnchorElement>) => {
-              e.currentTarget.style.background = "var(--base)";
-              e.currentTarget.style.color = "var(--hover-text, #fff)";
+              e.currentTarget.style.background = "#D6A99D";
+              e.currentTarget.style.color = "#ffffff";
+              e.currentTarget.style.border = "1px solid #D6A99D";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow =
+                "0 8px 25px rgba(214, 169, 157, 0.3)";
             };
             const hoverOut = (e: React.MouseEvent<HTMLAnchorElement>) => {
-              e.currentTarget.style.background = "var(--pill-bg, #fff)";
-              e.currentTarget.style.color = "var(--pill-text, #fff)";
+              e.currentTarget.style.background = "rgba(255, 255, 255, 0.9)";
+              e.currentTarget.style.color = "#374151";
+              e.currentTarget.style.border = "1px solid #D6A99D";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow =
+                "0 4px 15px rgba(214, 169, 157, 0.15)";
             };
 
             const linkClasses =
-              "block py-3 px-4 text-[16px] font-medium rounded-[50px] transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]";
+              "block py-4 px-6 text-lg font-semibold rounded-xl transition-all duration-300 ease-out text-center border shadow-md hover:shadow-lg";
 
             return (
               <li key={item.href}>
@@ -469,7 +479,10 @@ const PillNav: React.FC<PillNavProps> = ({
                   <Link
                     href={item.href}
                     className={linkClasses}
-                    style={defaultStyle}
+                    style={{
+                      ...defaultStyle,
+                      boxShadow: "0 4px 15px rgba(214, 169, 157, 0.15)",
+                    }}
                     onMouseEnter={hoverIn}
                     onMouseLeave={hoverOut}
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -480,7 +493,10 @@ const PillNav: React.FC<PillNavProps> = ({
                   <a
                     href={item.href}
                     className={linkClasses}
-                    style={defaultStyle}
+                    style={{
+                      ...defaultStyle,
+                      boxShadow: "0 4px 15px rgba(214, 169, 157, 0.15)",
+                    }}
                     onMouseEnter={hoverIn}
                     onMouseLeave={hoverOut}
                     onClick={() => setIsMobileMenuOpen(false)}

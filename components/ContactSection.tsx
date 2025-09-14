@@ -28,28 +28,28 @@ export default function ContactSection() {
   return (
     <section
       id='contact'
-      className='py-24 bg-gradient-to-br from-cream via-white to-sage-green/5 relative overflow-hidden'
+      className='py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-cream via-white to-sage-green/5 relative overflow-hidden'
     >
       {/* Background Pattern */}
       <div className='absolute inset-0 opacity-5'>
-        <div className='absolute top-20 left-10 w-40 h-40 border border-dusty-rose rounded-full'></div>
-        <div className='absolute bottom-32 right-16 w-32 h-32 border border-sage-green rounded-full'></div>
-        <div className='absolute top-1/2 left-1/4 w-24 h-24 border border-dusty-rose/50 rounded-full'></div>
-        <div className='absolute top-1/4 right-1/3 w-20 h-20 border border-sage-green/50 rounded-full'></div>
+        <div className='absolute top-20 left-10 w-32 sm:w-40 h-32 sm:h-40 border border-dusty-rose rounded-full'></div>
+        <div className='absolute bottom-32 right-16 w-24 sm:w-32 h-24 sm:h-32 border border-sage-green rounded-full'></div>
+        <div className='absolute top-1/2 left-1/4 w-20 sm:w-24 h-20 sm:h-24 border border-dusty-rose/50 rounded-full'></div>
+        <div className='absolute top-1/4 right-1/3 w-16 sm:w-20 h-16 sm:h-20 border border-sage-green/50 rounded-full'></div>
       </div>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
         {/* Header Section */}
-        <div className='text-center mb-20'>
-          <div className='space-y-6'>
-            <h2 className='text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
+        <div className='text-center mb-12 sm:mb-16 lg:mb-20'>
+          <div className='space-y-4 sm:space-y-6'>
+            <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
               <span className='block text-dusty-rose italic'>
                 Let&apos;s Connect
               </span>
               <span className='block'>& Create Together</span>
             </h2>
-            <div className='w-24 h-1 bg-dusty-rose rounded-full mx-auto'></div>
-            <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
+            <div className='w-20 sm:w-24 h-1 bg-dusty-rose rounded-full mx-auto'></div>
+            <p className='text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4'>
               Ready to outfit your school with premium uniforms? We&apos;re here
               to help with custom solutions, bulk orders, and exceptional
               service.
@@ -57,26 +57,26 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className='grid lg:grid-cols-5 gap-16 items-start'>
+        <div className='grid lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-16 items-start'>
           {/* Contact Information - Left Side */}
-          <div className='lg:col-span-2 space-y-12'>
-            <div className='space-y-8'>
-              <div className='space-y-6'>
-                <h3 className='text-2xl font-playfair font-semibold text-gray-900'>
+          <div className='lg:col-span-2 space-y-8 sm:space-y-12 order-2 lg:order-1'>
+            <div className='space-y-6 sm:space-y-8'>
+              <div className='space-y-4 sm:space-y-6'>
+                <h3 className='text-xl sm:text-2xl font-playfair font-semibold text-gray-900'>
                   Get in Touch
                 </h3>
-                <p className='text-gray-600 leading-relaxed'>
+                <p className='text-gray-600 leading-relaxed text-sm sm:text-base'>
                   Whether you need a single uniform or outfitting an entire
                   school, our team is ready to provide personalized assistance.
                 </p>
               </div>
 
               {/* Contact Details */}
-              <div className='space-y-6'>
-                <div className='group flex items-start space-x-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border border-sage-green/10'>
-                  <div className='flex-shrink-0 w-12 h-12 bg-dusty-rose/10 rounded-full flex items-center justify-center group-hover:bg-dusty-rose/20 transition-colors'>
+              <div className='space-y-4 sm:space-y-6'>
+                <div className='group flex items-start space-x-4 p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border border-sage-green/10'>
+                  <div className='flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 bg-dusty-rose/10 rounded-full flex items-center justify-center group-hover:bg-dusty-rose/20 transition-colors'>
                     <svg
-                      className='w-6 h-6 text-dusty-rose'
+                      className='w-5 sm:w-6 h-5 sm:h-6 text-dusty-rose'
                       fill='none'
                       stroke='currentColor'
                       viewBox='0 0 24 24'
@@ -192,20 +192,20 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form - Right Side */}
-          <div className='lg:col-span-3'>
-            <div className='bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-sage-green/10 p-8 lg:p-12'>
-              <div className='mb-8'>
-                <h3 className='text-3xl font-playfair font-semibold text-gray-900 mb-2'>
+          <div className='lg:col-span-3 order-1 lg:order-2'>
+            <div className='bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl border border-sage-green/10 p-6 sm:p-8 lg:p-12'>
+              <div className='mb-6 sm:mb-8'>
+                <h3 className='text-2xl sm:text-3xl font-playfair font-semibold text-gray-900 mb-2'>
                   Send Us a Message
                 </h3>
-                <p className='text-gray-600'>
+                <p className='text-gray-600 text-sm sm:text-base'>
                   Fill out the form below and we&apos;ll get back to you as soon
                   as possible.
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className='space-y-6'>
-                <div className='grid md:grid-cols-2 gap-6'>
+              <form onSubmit={handleSubmit} className='space-y-4 sm:space-y-6'>
+                <div className='grid sm:grid-cols-2 gap-4 sm:gap-6'>
                   <div className='space-y-2'>
                     <label
                       htmlFor='name'
@@ -220,7 +220,7 @@ export default function ContactSection() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80 text-sm sm:text-base'
                       placeholder='Enter your full name'
                     />
                   </div>
@@ -239,13 +239,13 @@ export default function ContactSection() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80 text-sm sm:text-base'
                       placeholder='Enter your email address'
                     />
                   </div>
                 </div>
 
-                <div className='grid md:grid-cols-2 gap-6'>
+                <div className='grid sm:grid-cols-2 gap-4 sm:gap-6'>
                   <div className='space-y-2'>
                     <label
                       htmlFor='phone'
@@ -344,12 +344,14 @@ export default function ContactSection() {
         </div>
 
         {/* Quick Contact CTA */}
-        <div className='mt-20 text-center'>
-          <div className='inline-flex items-center space-x-6 bg-white/90 backdrop-blur-sm rounded-full py-4 px-8 shadow-lg border border-sage-green/10'>
-            <span className='text-gray-600'>Need immediate assistance?</span>
+        <div className='mt-12 sm:mt-16 lg:mt-20 text-center'>
+          <div className='inline-flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-6 bg-white/90 backdrop-blur-sm rounded-full py-3 sm:py-4 px-6 sm:px-8 shadow-lg border border-sage-green/10 max-w-sm sm:max-w-none mx-auto'>
+            <span className='text-gray-600 text-sm sm:text-base text-center'>
+              Need immediate assistance?
+            </span>
             <a
               href='tel:+15551234567'
-              className='bg-dusty-rose text-white px-6 py-2 rounded-full font-semibold hover:bg-dusty-rose/90 transition-colors'
+              className='bg-dusty-rose text-white px-4 sm:px-6 py-2 rounded-full font-semibold hover:bg-dusty-rose/90 transition-colors text-sm sm:text-base whitespace-nowrap'
             >
               Call Now
             </a>

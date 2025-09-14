@@ -5,29 +5,29 @@ export default function BulkOrdersSection() {
   return (
     <section
       id='bulk-orders'
-      className='py-20 bg-gradient-to-br from-cream to-sage-green/10 relative overflow-hidden'
+      className='py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-cream to-sage-green/10 relative overflow-hidden'
     >
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='grid lg:grid-cols-2 gap-16 items-center'>
+        <div className='grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center'>
           {/* Left Content */}
-          <div className='space-y-8 order-2 lg:order-1'>
-            <div className='space-y-6'>
+          <div className='space-y-6 sm:space-y-8 order-2 lg:order-1'>
+            <div className='space-y-4 sm:space-y-6'>
               <div className='space-y-2'>
-                <h2 className='text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
+                <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
                   <span className='block text-dusty-rose italic'>
                     Bulk Orders
                   </span>
                   <span className='block'>Made Simple</span>
                 </h2>
-                <div className='w-24 h-1 bg-dusty-rose rounded-full'></div>
+                <div className='w-20 sm:w-24 h-1 bg-dusty-rose rounded-full'></div>
               </div>
 
-              <div className='space-y-6 text-gray-700 text-lg leading-relaxed'>
-                <p className='text-2xl font-semibold text-dusty-rose'>
+              <div className='space-y-4 sm:space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed'>
+                <p className='text-xl sm:text-2xl font-semibold text-dusty-rose'>
                   From 50 to 5000+ uniforms - we&apos;ve got you covered.
                 </p>
 
-                <div className='space-y-4'>
+                <div className='space-y-3 sm:space-y-4'>
                   <p>
                     Whether you&apos;re a small school or a large educational
                     institution, we specialize in delivering high-quality school
@@ -44,7 +44,7 @@ export default function BulkOrdersSection() {
                 </div>
 
                 {/* Key Benefits */}
-                <div className='grid sm:grid-cols-2 gap-4 pt-4'>
+                <div className='grid sm:grid-cols-2 gap-3 sm:gap-4 pt-4'>
                   <div className='flex items-start space-x-3'>
                     <div className='w-2 h-2 bg-dusty-rose rounded-full mt-3 flex-shrink-0'></div>
                     <div>
