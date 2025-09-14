@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section id='home' className='relative h-screen'>
       {/* Navigation Bar */}
       <PillNav
-        logo='/next.svg'
+        logo='/images/ASD logo Final-15.png'
         logoAlt='Adarsh School Dress Logo'
         items={[
           { label: "About", href: "#about" },

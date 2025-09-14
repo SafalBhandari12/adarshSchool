@@ -16,7 +16,7 @@ export default function Home() {
       >
         {/* Navigation Bar */}
         <PillNav
-          logo='/next.svg'
+          logo='images/ASD logo Final-11.png'
           logoAlt='Adarsh School Dress Logo'
           items={[
             { label: "Home", href: "#home" },

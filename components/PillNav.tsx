@@ -251,8 +251,8 @@ const PillNav: React.FC<PillNavProps> = ({
     ["--pill-bg"]: "transparent", // no background
     ["--hover-text"]: "#D6A99D", // dusty-rose for hover
     ["--pill-text"]: "#D6A99D", // dusty-rose for text
-    ["--nav-h"]: "42px",
-    ["--logo"]: "36px",
+    ["--nav-h"]: "80px",
+    ["--logo"]: "76px",
     ["--pill-pad-x"]: "18px",
     ["--pill-gap"]: "3px",
   } as React.CSSProperties;
