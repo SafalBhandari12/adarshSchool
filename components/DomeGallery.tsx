@@ -365,7 +365,8 @@ export default function DomeGallery({
         stopInertia();
 
         const evt = event as PointerEvent;
-        pointerTypeRef.current = (evt.pointerType as "mouse" | "pen" | "touch") || "mouse";
+        pointerTypeRef.current =
+          (evt.pointerType as "mouse" | "pen" | "touch") || "mouse";
         if (pointerTypeRef.current === "touch") {
           evt.preventDefault();
           lockScroll();

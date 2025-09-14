@@ -33,8 +33,6 @@ const PillNav: React.FC<PillNavProps> = ({
   activeHref,
   className = "",
   ease = "power3.easeOut",
-  baseColor = "#fff",
-  pillTextColor,
   onMobileMenuClick,
   initialLoadAnimation = true,
 }) => {
