@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PillNav from "../components/PillNav";
 
 export default function Home() {

@@ -44,14 +44,15 @@ export default function ContactSection() {
           <div className='space-y-6'>
             <h2 className='text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
               <span className='block text-dusty-rose italic'>
-                Let's Connect
+                Let&apos;s Connect
               </span>
               <span className='block'>& Create Together</span>
             </h2>
             <div className='w-24 h-1 bg-dusty-rose rounded-full mx-auto'></div>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
-              Ready to outfit your school with premium uniforms? We're here to
-              help with custom solutions, bulk orders, and exceptional service.
+              Ready to outfit your school with premium uniforms? We&apos;re here
+              to help with custom solutions, bulk orders, and exceptional
+              service.
             </p>
           </div>
         </div>
@@ -192,14 +193,14 @@ export default function ContactSection() {
 
           {/* Contact Form - Right Side */}
           <div className='lg:col-span-3'>
-            <div className='bg-white/90 backdrop-blur-sm rounded-3xl  border border-sage-green/10 p-8 lg:p-12'>
+            <div className='bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-sage-green/10 p-8 lg:p-12'>
               <div className='mb-8'>
                 <h3 className='text-3xl font-playfair font-semibold text-gray-900 mb-2'>
                   Send Us a Message
                 </h3>
                 <p className='text-gray-600'>
-                  Fill out the form below and we'll get back to you as soon as
-                  possible.
+                  Fill out the form below and we&apos;ll get back to you as soon
+                  as possible.
                 </p>
               </div>
 

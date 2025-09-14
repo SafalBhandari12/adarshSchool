@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function AboutSection() {
   return (
     <section id='about' className='py-20 bg-white relative'>
@@ -7,9 +9,9 @@ export default function AboutSection() {
           <div className='space-y-8'>
             <div className='space-y-6'>
               <h2 className='text-5xl lg:text-6xl font-serif leading-tight text-gray-900'>
-                <span className='block'>"Two generations of apparel</span>
+                <span className='block'>&ldquo;Two generations of apparel</span>
                 <span className='block italic text-dusty-rose font-light'>
-                  manufacturing experience, since 2012"
+                  manufacturing experience, since 2012&rdquo;
                 </span>
               </h2>
 
@@ -55,10 +57,11 @@ export default function AboutSection() {
           <div className='relative'>
             <div className='relative bg-gray-100 rounded-2xl overflow-hidden shadow-2xl'>
               <div className='aspect-[4/5] relative'>
-                <img
+                <Image
                   src='/images/aboutUs.jpeg'
                   alt='About Adarsh Dress - School Uniform Manufacturing'
-                  className='w-full h-full object-cover'
+                  fill
+                  className='object-cover'
                 />
                 {/* Overlay with company info */}
                 <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6'>

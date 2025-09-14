@@ -24,12 +24,12 @@ export default function BulkOrdersSection() {
 
               <div className='space-y-6 text-gray-700 text-lg leading-relaxed'>
                 <p className='text-2xl font-semibold text-dusty-rose'>
-                  From 50 to 5000+ uniforms - we've got you covered.
+                  From 50 to 5000+ uniforms - we&apos;ve got you covered.
                 </p>
 
                 <div className='space-y-4'>
                   <p>
-                    Whether you're a small school or a large educational
+                    Whether you&apos;re a small school or a large educational
                     institution, we specialize in delivering high-quality school
                     uniforms in bulk quantities with competitive pricing and
                     reliable timelines.

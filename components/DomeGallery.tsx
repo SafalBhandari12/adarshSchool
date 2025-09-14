@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useRef, useCallback } from "react";
 import { useGesture } from "@use-gesture/react";
+import Image from "next/image";
 
 type ImageItem = string | { src: string; alt?: string };
 
@@ -364,7 +365,7 @@ export default function DomeGallery({
         stopInertia();
 
         const evt = event as PointerEvent;
-        pointerTypeRef.current = (evt.pointerType as any) || "mouse";
+        pointerTypeRef.current = (evt.pointerType as "mouse" | "pen" | "touch") || "mouse";
         if (pointerTypeRef.current === "touch") {
           evt.preventDefault();
           lockScroll();
@@ -431,7 +432,7 @@ export default function DomeGallery({
             }
           }
 
-          let [vMagX, vMagY] = velArr;
+          const [vMagX, vMagY] = velArr;
           const [dirX, dirY] = dirArr;
           let vx = vMagX * dirX;
           let vy = vMagY * dirY;
@@ -496,7 +497,7 @@ export default function DomeGallery({
         parent.style.setProperty("--rot-y-delta", `0deg`);
         parent.style.setProperty("--rot-x-delta", `0deg`);
         el.style.visibility = "";
-        (el.style as any).zIndex = 0;
+        (el.style as CSSStyleDeclaration).zIndex = "0";
         focusedElRef.current = null;
         rootRef.current?.removeAttribute("data-enlarging");
         openingRef.current = false;
@@ -573,7 +574,7 @@ export default function DomeGallery({
         requestAnimationFrame(() => {
           el.style.visibility = "";
           el.style.opacity = "0";
-          (el.style as any).zIndex = 0;
+          (el.style as CSSStyleDeclaration).zIndex = "0";
           focusedElRef.current = null;
           rootRef.current?.removeAttribute("data-enlarging");
 
@@ -609,7 +610,7 @@ export default function DomeGallery({
       scrim.removeEventListener("click", close);
       window.removeEventListener("keydown", onKey);
     };
-  }, [enlargeTransitionMs, openedImageBorderRadius, grayscale]);
+  }, [enlargeTransitionMs, openedImageBorderRadius, grayscale, unlockScroll]);
 
   const openItemFromElement = (el: HTMLElement) => {
     if (cancelTapRef.current) return;
@@ -652,7 +653,7 @@ export default function DomeGallery({
       height: tileR.height,
     };
     el.style.visibility = "hidden";
-    (el.style as any).zIndex = 0;
+    (el.style as CSSStyleDeclaration).zIndex = "0";
     const overlay = document.createElement("div");
     overlay.className = "enlarge";
     overlay.style.cssText = `position:absolute; left:${
@@ -839,12 +840,12 @@ export default function DomeGallery({
         className='sphere-root relative w-full h-full'
         style={
           {
-            ["--segments-x" as any]: segments,
-            ["--segments-y" as any]: segments,
-            ["--overlay-blur-color" as any]: overlayBlurColor,
-            ["--tile-radius" as any]: imageBorderRadius,
-            ["--enlarge-radius" as any]: openedImageBorderRadius,
-            ["--image-filter" as any]: grayscale ? "grayscale(1)" : "none",
+            "--segments-x": segments,
+            "--segments-y": segments,
+            "--overlay-blur-color": overlayBlurColor,
+            "--tile-radius": imageBorderRadius,
+            "--enlarge-radius": openedImageBorderRadius,
+            "--image-filter": grayscale ? "grayscale(1)" : "none",
           } as React.CSSProperties
         }
       >
@@ -871,10 +872,10 @@ export default function DomeGallery({
                   data-size-y={it.sizeY}
                   style={
                     {
-                      ["--offset-x" as any]: it.x,
-                      ["--offset-y" as any]: it.y,
-                      ["--item-size-x" as any]: it.sizeX,
-                      ["--item-size-y" as any]: it.sizeY,
+                      "--offset-x": it.x,
+                      "--offset-y": it.y,
+                      "--item-size-x": it.sizeX,
+                      "--item-size-y": it.sizeY,
                       top: "-999px",
                       bottom: "-999px",
                       left: "-999px",
@@ -905,11 +906,12 @@ export default function DomeGallery({
                         "linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)",
                     }}
                   >
-                    <img
+                    <Image
                       src={it.src}
-                      draggable={false}
                       alt={it.alt}
-                      className='w-full h-full object-cover pointer-events-none'
+                      fill
+                      draggable={false}
+                      className='object-cover pointer-events-none'
                       style={{
                         backfaceVisibility: "hidden",
                         filter: `var(--image-filter, ${

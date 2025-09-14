@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { gsap } from "gsap";
 
 export type PillNavItem = {
@@ -33,13 +34,10 @@ const PillNav: React.FC<PillNavProps> = ({
   className = "",
   ease = "power3.easeOut",
   baseColor = "#fff",
-  pillColor = "#060010",
-  hoveredPillTextColor = "#060010",
   pillTextColor,
   onMobileMenuClick,
   initialLoadAnimation = true,
 }) => {
-  const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const circleRefs = useRef<Array<HTMLSpanElement | null>>([]);
   const tlRefs = useRef<Array<gsap.core.Timeline | null>>([]);
@@ -284,11 +282,12 @@ const PillNav: React.FC<PillNavProps> = ({
               background: "var(--base, #000)",
             }}
           >
-            <img
+            <Image
               src={logo}
               alt={logoAlt}
               ref={logoImgRef}
-              className='w-full h-full object-cover block'
+              fill
+              className='object-cover block'
             />
           </Link>
         ) : (
@@ -306,11 +305,12 @@ const PillNav: React.FC<PillNavProps> = ({
               background: "var(--base, #000)",
             }}
           >
-            <img
+            <Image
               src={logo}
               alt={logoAlt}
               ref={logoImgRef}
-              className='w-full h-full object-cover block'
+              fill
+              className='object-cover block'
             />
           </a>
         )}

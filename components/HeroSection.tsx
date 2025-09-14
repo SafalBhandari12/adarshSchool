@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import PillNav from "./PillNav";
 
 export default function HeroSection() {
@@ -26,14 +27,17 @@ export default function HeroSection() {
       {/* Hero Content - Center */}
       <div className='absolute inset-0 flex items-center justify-center text-center px-4'>
         <div className='max-w-4xl mx-auto'>
-          <img
-            src='/images/heroText.png'
-            alt='Crafting Excellence, Inspiring Confidence'
-            className='w-full max-w-3xl mx-auto h-auto drop-shadow-xl'
-            style={{
-              filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.3))",
-            }}
-          />
+          <div className='relative w-full max-w-3xl mx-auto h-32'>
+            <Image
+              src='/images/heroText.png'
+              alt='Crafting Excellence, Inspiring Confidence'
+              fill
+              className='object-contain drop-shadow-xl'
+              style={{
+                filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.3))",
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
