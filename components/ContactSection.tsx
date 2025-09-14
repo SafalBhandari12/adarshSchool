@@ -193,7 +193,7 @@ export default function ContactSection() {
 
           {/* Contact Form - Right Side */}
           <div className='lg:col-span-3 order-1 lg:order-2'>
-            <div className='bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl border border-sage-green/10 p-6 sm:p-8 lg:p-12'>
+            <div className='bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl  border border-sage-green/10 p-6 sm:p-8 lg:p-12'>
               <div className='mb-6 sm:mb-8'>
                 <h3 className='text-2xl sm:text-3xl font-playfair font-semibold text-gray-900 mb-2'>
                   Send Us a Message
