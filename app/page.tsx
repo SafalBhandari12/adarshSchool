@@ -6,6 +6,7 @@ import DomeGallery from "../components/DomeGallery";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import ParallaxBackground from "../components/ParallaxBackground";
+import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -23,6 +24,12 @@ export default function Home() {
         <ContactSection />
         <Footer />
       </div>
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppFloat 
+        phoneNumber="918449431638"
+        message="Hello! I'm interested in your school uniforms. Can you please provide more information about bulk orders and pricing?"
+      />
     </>
   );
 }
