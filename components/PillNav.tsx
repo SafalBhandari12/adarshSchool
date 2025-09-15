@@ -121,7 +121,13 @@ const PillNav: React.FC<PillNavProps> = ({
 
     const menu = mobileMenuRef.current;
     if (menu) {
-      gsap.set(menu, { visibility: "hidden", opacity: 0, scaleY: 1, y: 0 });
+      gsap.set(menu, { 
+        visibility: "hidden", 
+        opacity: 0, 
+        scaleY: 1, 
+        y: 0,
+        display: "none"
+      });
     }
 
     if (initialLoadAnimation) {
@@ -205,7 +211,7 @@ const PillNav: React.FC<PillNavProps> = ({
 
     if (menu) {
       if (newState) {
-        gsap.set(menu, { visibility: "visible" });
+        gsap.set(menu, { visibility: "visible", display: "block" });
         gsap.fromTo(
           menu,
           { opacity: 0, y: 10, scaleY: 1 },
@@ -227,7 +233,7 @@ const PillNav: React.FC<PillNavProps> = ({
           ease,
           transformOrigin: "top center",
           onComplete: () => {
-            gsap.set(menu, { visibility: "hidden" });
+            gsap.set(menu, { visibility: "hidden", display: "none" });
           },
         });
       }
@@ -439,7 +445,7 @@ const PillNav: React.FC<PillNavProps> = ({
 
       <div
         ref={mobileMenuRef}
-        className='md:hidden fixed top-20 left-4 right-4 rounded-2xl shadow-2xl z-[998] origin-top backdrop-blur-sm border border-gray-200'
+        className='md:hidden fixed top-20 left-4 right-4 rounded-2xl shadow-2xl z-[998] origin-top backdrop-blur-sm border border-gray-200 hidden'
         style={{
           background: "rgba(255, 255, 255, 0.95)",
           maxWidth: "320px",
