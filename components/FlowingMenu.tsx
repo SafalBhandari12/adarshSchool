@@ -100,7 +100,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
   const repeatedMarqueeContent = React.useMemo(() => {
     return Array.from({ length: 4 }).map((_, idx) => (
       <React.Fragment key={idx}>
-        <span className='text-[#D6A99D] uppercase font-bold text-[4vh] leading-[1.2] p-[1vh_1vw_0] tracking-wider'>
+        <span className='text-primary uppercase font-bold text-[4vh] leading-[1.2] p-[1vh_1vw_0] tracking-wider'>
           {text}
         </span>
         <div
@@ -117,7 +117,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
       ref={itemRef}
     >
       <a
-        className='flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-bold text-[#D6A99D] text-[4vh] hover:text-[#9A6F5D] focus:text-[#D6A99D] focus-visible:text-[#9A6F5D] transition-all duration-300 tracking-wider group'
+        className='flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-bold text-secondary text-[4vh] hover:text-[#9A6F5D] focus:text-[#D6A99D] focus-visible:text-[#9A6F5D] transition-all duration-300 tracking-wider group'
         style={{
           fontFamily: "Playfair Display, serif",
           textShadow: "1px 1px 2px rgba(214, 169, 157, 0.3)",

@@ -29,14 +29,14 @@ export default function ProductsSection() {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center mb-16'>
           <h2
-            className='text-6xl md:text-7xl lg:text-8xl font-serif italic mb-4 text-dusty-rose'
+            className='text-6xl md:text-7xl lg:text-8xl font-serif italic mb-4 text-primary'
             style={{
               fontFamily: "Playfair Display, serif",
               fontWeight: "400",
               letterSpacing: "0.02em",
               textShadow: "2px 2px 4px rgba(214, 169, 157, 0.3)",
               background:
-                "linear-gradient(135deg, #D6A99D 0%, #B8897D 50%, #9A6F5D 100%)",
+                "linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 50%, #cc2a00 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",

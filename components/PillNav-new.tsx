@@ -180,8 +180,8 @@ const PillNav: React.FC<PillNavProps> = ({
   const cssVars = {
     ["--base"]: "transparent",
     ["--pill-bg"]: "transparent",
-    ["--hover-text"]: "var(--primary-color)",
-    ["--pill-text"]: "var(--primary-color)",
+    ["--hover-text"]: "#D6A99D",
+    ["--pill-text"]: "#D6A99D",
     ["--nav-h"]: "80px",
     ["--logo"]: "76px",
     ["--pill-pad-x"]: "18px",
@@ -392,22 +392,19 @@ const PillNav: React.FC<PillNavProps> = ({
           aria-expanded={isMobileMenuOpen}
         >
           <span
-            className={`block w-6 h-0.5 transition-all duration-300 ${
+            className={`block w-6 h-0.5 bg-black transition-all duration-300 ${
               isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
             }`}
-            style={{ backgroundColor: "var(--primary-color)" }}
           />
           <span
-            className={`block w-6 h-0.5 transition-all duration-300 mt-1 ${
+            className={`block w-6 h-0.5 bg-black transition-all duration-300 mt-1 ${
               isMobileMenuOpen ? "opacity-0" : ""
             }`}
-            style={{ backgroundColor: "var(--primary-color)" }}
           />
           <span
-            className={`block w-6 h-0.5 transition-all duration-300 mt-1 ${
+            className={`block w-6 h-0.5 bg-black transition-all duration-300 mt-1 ${
               isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
             }`}
-            style={{ backgroundColor: "var(--primary-color)" }}
           />
         </button>
       </nav>
@@ -442,7 +439,7 @@ const PillNav: React.FC<PillNavProps> = ({
               {isRouterLink(item.href) ? (
                 <Link
                   href={item.href}
-                  className='text-2xl font-medium text-primary hover:text-orange-500 transition-colors duration-300'
+                  className='text-2xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-300'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -450,7 +447,7 @@ const PillNav: React.FC<PillNavProps> = ({
               ) : (
                 <a
                   href={item.href}
-                  className='text-2xl font-medium text-primary hover:text-orange-500 transition-colors duration-300'
+                  className='text-2xl font-medium text-gray-800 hover:text-orange-500 transition-colors duration-300'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

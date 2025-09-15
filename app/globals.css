@@ -4,11 +4,17 @@
   --background: #ffffff;
   --foreground: #171717;
 
+  /* Main Brand Colors - Change --primary-color to update the main color throughout the site */
+  --primary-color: #ff3402; /* Main brand color - change this to update site-wide */
+  --primary-hover: #e02f00; /* Darker shade for hover states */
+  --primary-light: #ff6b3a; /* Lighter shade for accents */
+
   /* Warm Earthy Color Palette */
   --dusty-rose: #d6a99d;
   --cream-yellow: #fbf3d5;
   --sage-green: #d6dac8;
   --teal-gray: #9cafaa;
+  --primary-red: #ff3402;
 }
 
 /* Custom utility classes for the warm earthy palette */
@@ -24,6 +30,9 @@
 .bg-teal-gray {
   background-color: #9cafaa;
 }
+.bg-primary-red {
+  background-color: #ff3402;
+}
 
 .text-dusty-rose {
   color: #d6a99d;
@@ -36,6 +45,9 @@
 }
 .text-teal-gray {
   color: #9cafaa;
+}
+.text-primary-red {
+  color: #ff3402;
 }
 
 .border-dusty-rose {
@@ -51,6 +63,50 @@
   border-color: #9cafaa;
 }
 
+/* Primary Color Utilities - Centralized Color Management */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--primary-light);
+}
+.border-primary {
+  border-color: var(--primary-color);
+}
+.hover\:bg-primary:hover {
+  background-color: var(--primary-color);
+}
+.hover\:text-primary:hover {
+  color: var(--primary-color);
+}
+.hover\:border-primary:hover {
+  border-color: var(--primary-color);
+}
+
+/* Focus states using primary color */
+.focus\:ring-primary:focus {
+  --tw-ring-color: var(--primary-color);
+}
+.focus\:border-primary:focus {
+  border-color: var(--primary-color);
+}
+
+/* Form input focus states using primary color */
+.focus-primary:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 52, 2, 0.2);
+}
+
+.focus-ring-primary:focus {
+  outline: none;
+  --tw-ring-color: var(--primary-color);
+  --tw-ring-opacity: 0.5;
+}
+
 .hover\:bg-dusty-rose:hover {
   background-color: #d6a99d;
 }
@@ -62,4 +118,10 @@
 }
 .hover\:text-teal-gray:hover {
   color: #9cafaa;
+}
+.hover\:bg-primary-red:hover {
+  background-color: #ff3402;
+}
+.hover\:text-primary-red:hover {
+  color: #ff3402;
 }

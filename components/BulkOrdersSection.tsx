@@ -14,16 +14,14 @@ export default function BulkOrdersSection() {
             <div className='space-y-4 sm:space-y-6'>
               <div className='space-y-2'>
                 <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
-                  <span className='block text-dusty-rose italic'>
-                    Bulk Orders
-                  </span>
+                  <span className='block text-primary italic'>Bulk Orders</span>
                   <span className='block'>Made Simple</span>
                 </h2>
-                <div className='w-20 sm:w-24 h-1 bg-dusty-rose rounded-full'></div>
+                <div className='w-20 sm:w-24 h-1 bg-primary rounded-full'></div>
               </div>
 
               <div className='space-y-4 sm:space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed'>
-                <p className='text-xl sm:text-2xl font-semibold text-dusty-rose'>
+                <p className='text-xl sm:text-2xl font-semibold text-primary'>
                   From 50 to 5000+ uniforms - we&apos;ve got you covered.
                 </p>
 
@@ -46,7 +44,7 @@ export default function BulkOrdersSection() {
                 {/* Key Benefits */}
                 <div className='grid sm:grid-cols-2 gap-3 sm:gap-4 pt-4'>
                   <div className='flex items-start space-x-3'>
-                    <div className='w-2 h-2 bg-dusty-rose rounded-full mt-3 flex-shrink-0'></div>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0'></div>
                     <div>
                       <h4 className='font-semibold text-gray-900'>
                         Volume Discounts
@@ -58,7 +56,7 @@ export default function BulkOrdersSection() {
                   </div>
 
                   <div className='flex items-start space-x-3'>
-                    <div className='w-2 h-2 bg-dusty-rose rounded-full mt-3 flex-shrink-0'></div>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0'></div>
                     <div>
                       <h4 className='font-semibold text-gray-900'>
                         Fast Delivery
@@ -70,7 +68,7 @@ export default function BulkOrdersSection() {
                   </div>
 
                   <div className='flex items-start space-x-3'>
-                    <div className='w-2 h-2 bg-dusty-rose rounded-full mt-3 flex-shrink-0'></div>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0'></div>
                     <div>
                       <h4 className='font-semibold text-gray-900'>
                         Quality Assured
@@ -82,7 +80,7 @@ export default function BulkOrdersSection() {
                   </div>
 
                   <div className='flex items-start space-x-3'>
-                    <div className='w-2 h-2 bg-dusty-rose rounded-full mt-3 flex-shrink-0'></div>
+                    <div className='w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0'></div>
                     <div>
                       <h4 className='font-semibold text-gray-900'>
                         Easy Process
@@ -96,7 +94,7 @@ export default function BulkOrdersSection() {
               </div>
 
               <div className='pt-6'>
-                <button className='group inline-flex items-center bg-dusty-rose text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dusty-rose/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1'>
+                <button className='group inline-flex items-center bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-dusty-rose/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1'>
                   Get Bulk Pricing Quote
                   <div className='ml-3 w-6 h-6 border-2 border-white rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300'>
                     <svg
@@ -144,28 +142,28 @@ export default function BulkOrdersSection() {
         {/* Stats Section */}
         <div className='mt-20 grid grid-cols-2 md:grid-cols-4 gap-8'>
           <div className='text-center'>
-            <div className='text-4xl font-bold text-dusty-rose font-playfair'>
+            <div className='text-4xl font-bold text-black font-playfair'>
               5000+
             </div>
-            <div className='text-gray-600 mt-2'>Uniforms Delivered</div>
+            <div className='text-primary mt-2'>Uniforms Delivered</div>
           </div>
           <div className='text-center'>
-            <div className='text-4xl font-bold text-dusty-rose font-playfair'>
+            <div className='text-4xl font-bold text-black font-playfair'>
               50+
             </div>
-            <div className='text-gray-600 mt-2'>Schools Served</div>
+            <div className='text-primary mt-2'>Schools Served</div>
           </div>
           <div className='text-center'>
-            <div className='text-4xl font-bold text-dusty-rose font-playfair'>
+            <div className='text-4xl font-bold text-black font-playfair'>
               24hrs
             </div>
-            <div className='text-gray-600 mt-2'>Quick Response</div>
+            <div className='text-primary mt-2'>Quick Response</div>
           </div>
           <div className='text-center'>
-            <div className='text-4xl font-bold text-dusty-rose font-playfair'>
+            <div className='text-4xl font-bold text-black font-playfair'>
               99%
             </div>
-            <div className='text-gray-600 mt-2'>Satisfaction Rate</div>
+            <div className='text-primary mt-2'>Satisfaction Rate</div>
           </div>
         </div>
       </div>

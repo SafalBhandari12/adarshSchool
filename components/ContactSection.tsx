@@ -43,13 +43,13 @@ export default function ContactSection() {
         <div className='text-center mb-12 sm:mb-16 lg:mb-20'>
           <div className='space-y-4 sm:space-y-6'>
             <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold leading-tight text-gray-900'>
-              <span className='block text-dusty-rose italic'>
+              <span className='block text-primary italic'>
                 Let&apos;s Connect
               </span>
               <span className='block'>& Create Together</span>
             </h2>
-            <div className='w-20 sm:w-24 h-1 bg-dusty-rose rounded-full mx-auto'></div>
-            <p className='text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4'>
+            <div className='w-20 sm:w-24 h-1 bg-primary rounded-full mx-auto'></div>
+            <p className='text-base sm:text-lg lg:text-xl text-black max-w-3xl mx-auto leading-relaxed px-4'>
               Ready to outfit your school with premium uniforms? We&apos;re here
               to help with custom solutions, bulk orders, and exceptional
               service.
@@ -65,7 +65,7 @@ export default function ContactSection() {
                 <h3 className='text-xl sm:text-2xl font-playfair font-semibold text-gray-900'>
                   Get in Touch
                 </h3>
-                <p className='text-gray-600 leading-relaxed text-sm sm:text-base'>
+                <p className='text-black leading-relaxed text-sm sm:text-base'>
                   Whether you need a single uniform or outfitting an entire
                   school, our team is ready to provide personalized assistance.
                 </p>
@@ -220,7 +220,7 @@ export default function ContactSection() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80 text-sm sm:text-base'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/80 text-sm sm:text-base'
                       placeholder='Enter your full name'
                     />
                   </div>
@@ -239,7 +239,7 @@ export default function ContactSection() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80 text-sm sm:text-base'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/80 text-sm sm:text-base'
                       placeholder='Enter your email address'
                     />
                   </div>
@@ -259,7 +259,7 @@ export default function ContactSection() {
                       name='phone'
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/80'
                       placeholder='Enter your phone number'
                     />
                   </div>
@@ -277,7 +277,7 @@ export default function ContactSection() {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80'
+                      className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/80'
                     >
                       <option value=''>Select a subject</option>
                       <option value='bulk-order'>Bulk Order Inquiry</option>
@@ -305,7 +305,7 @@ export default function ContactSection() {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-dusty-rose/50 focus:border-dusty-rose transition-all duration-300 bg-white/80 resize-none'
+                    className='w-full px-4 py-3 border border-sage-green/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 bg-white/80 resize-none'
                     placeholder='Tell us about your requirements, quantity needed, timeline, or any specific questions you have...'
                   ></textarea>
                 </div>
@@ -313,7 +313,7 @@ export default function ContactSection() {
                 <div className='pt-4'>
                   <button
                     type='submit'
-                    className='group w-full bg-dusty-rose text-white font-semibold py-4 px-8 rounded-xl hover:bg-dusty-rose/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-dusty-rose/50'
+                    className='group w-full bg-primary text-white font-semibold py-4 px-8 rounded-xl hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary/50'
                   >
                     <span className='flex items-center justify-center space-x-3'>
                       <span>Send Message</span>
@@ -351,7 +351,7 @@ export default function ContactSection() {
             </span>
             <a
               href='tel:+15551234567'
-              className='bg-dusty-rose text-white px-4 sm:px-6 py-2 rounded-full font-semibold hover:bg-dusty-rose/90 transition-colors text-sm sm:text-base whitespace-nowrap'
+              className='bg-primary text-white px-4 sm:px-6 py-2 rounded-full font-semibold hover:bg-dusty-rose/90 transition-colors text-sm sm:text-base whitespace-nowrap'
             >
               Call Now
             </a>
