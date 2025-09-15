@@ -181,7 +181,7 @@ const PillNav: React.FC<PillNavProps> = ({
     ["--base"]: "transparent",
     ["--pill-bg"]: "transparent",
     ["--hover-text"]: "var(--primary-color)",
-    ["--pill-text"]: "var(--primary-color)",
+    ["--pill-text"]: "black",
     ["--nav-h"]: "80px",
     ["--logo"]: "76px",
     ["--pill-pad-x"]: "18px",
@@ -442,7 +442,7 @@ const PillNav: React.FC<PillNavProps> = ({
               {isRouterLink(item.href) ? (
                 <Link
                   href={item.href}
-                  className='text-2xl font-medium text-primary hover:text-orange-500 transition-colors duration-300'
+                  className='text-2xl font-medium text-black hover:text-orange-500 transition-colors duration-300'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -450,7 +450,7 @@ const PillNav: React.FC<PillNavProps> = ({
               ) : (
                 <a
                   href={item.href}
-                  className='text-2xl font-medium text-primary hover:text-orange-500 transition-colors duration-300'
+                  className='text-2xl font-medium text-black hover:text-orange-500 transition-colors duration-300'
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
