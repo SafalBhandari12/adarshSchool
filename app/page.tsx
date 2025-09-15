@@ -26,8 +26,8 @@ export default function Home() {
       </div>
 
       {/* WhatsApp Floating Button */}
-      <WhatsAppFloat 
-        phoneNumber="918449431638"
+      <WhatsAppFloat
+        phoneNumber='918449431638'
         message="Hello! I'm interested in your school uniforms. Can you please provide more information about bulk orders and pricing?"
       />
     </>

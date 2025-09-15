@@ -358,6 +358,8 @@ export default function DomeGallery({
     [dragDampening, maxVerticalRotationDeg, stopInertia]
   );
 
+  // Scrolling disabled - useGesture removed
+  /*
   useGesture(
     {
       onDragStart: ({ event }) => {
@@ -472,6 +474,7 @@ export default function DomeGallery({
     },
     { target: mainRef, eventOptions: { passive: false } }
   );
+  */
 
   useEffect(() => {
     const scrim = scrimRef.current;
@@ -758,6 +761,7 @@ export default function DomeGallery({
       perspective: calc(var(--radius) * 1.8);
       perspective-origin: 50% 50%;
       overflow: hidden;
+      pointer-events: none; /* Disable on mobile by default */
     }
     
     .sphere {
@@ -804,11 +808,22 @@ export default function DomeGallery({
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      pointer-events: auto;
+      pointer-events: none; /* Disable on mobile by default */
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       box-shadow: 0 8px 25px rgba(214, 169, 157, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1);
       border: 2px solid rgba(214, 169, 157, 0.2);
+    }
+    
+    /* Enable pointer events only on larger screens (desktop) */
+    @media (min-width: 768px) {
+      .item__image {
+        pointer-events: auto;
+      }
+      
+      .stage {
+        pointer-events: auto;
+      }
     }
     
     .item__image:hover {
@@ -854,9 +869,10 @@ export default function DomeGallery({
           ref={mainRef}
           className='absolute inset-0 grid place-items-center overflow-hidden select-none'
           style={{
-            touchAction: "none",
+            touchAction: "auto", // Changed from "none" to "auto" to allow scrolling
             WebkitUserSelect: "none",
             background: "transparent",
+            pointerEvents: "none", // Disable all pointer events on mobile
           }}
         >
           <div className='stage'>

@@ -121,12 +121,12 @@ const PillNav: React.FC<PillNavProps> = ({
 
     const menu = mobileMenuRef.current;
     if (menu) {
-      gsap.set(menu, { 
-        visibility: "hidden", 
-        opacity: 0, 
-        scaleY: 1, 
+      gsap.set(menu, {
+        visibility: "hidden",
+        opacity: 0,
+        scaleY: 1,
         y: 0,
-        display: "none"
+        display: "none",
       });
     }
 
